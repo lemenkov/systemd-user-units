@@ -1,0 +1,9 @@
+[Unit]
+Description=RXVT-Unicode Daemon
+#PartOf=openbox.service
+
+[Service]
+ExecStart=/usr/bin/urxvtd -q -o
+
+[Install]
+WantedBy=default.target

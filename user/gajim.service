@@ -1,0 +1,12 @@
+[Unit]
+Description=Gajim
+#Conflicts=gnome-session.service
+
+[Service]
+#RootDirectory=/usr/share/gajim/src
+#ExecStart=/usr/bin/python -OO gajim.py
+#Type=forking
+ExecStart=/usr/bin/python -OO /usr/share/gajim/src/gajim.py
+
+[Install]
+WantedBy=default.target

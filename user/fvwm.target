@@ -1,0 +1,8 @@
+[Unit]
+Description=Openbox Desktop Environment
+Wants=xorg.target
+Wants=fvwm.service
+AllowIsolate=true
+
+[Install]
+WantedBy=default.target

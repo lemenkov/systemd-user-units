@@ -1,0 +1,19 @@
+[Unit]
+Description=FVWM
+#Wants=compton.service
+#Wants=gnome-sound-applet.service
+#Wants=nm-applet.service
+#Wants=stalonetray.service
+#Conflicts=gnome-session.service
+After=xorg.target
+After=environment.target
+
+[Service]
+#ExecStart=/usr/bin/fvwm -f /home/petro/.fvwm/.fvwm2rc
+ExecStart=/usr/bin/fvwm
+#ExecReload=/usr/bin/fvwm --reload
+#ExecStop=/usr/bin/fvwm --exit
+
+KillMode=process
+Restart=always
+RestartSec=1
