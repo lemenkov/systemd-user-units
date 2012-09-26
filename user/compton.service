@@ -1,0 +1,9 @@
+[Unit]
+Description=Compton simple compositor
+
+[Service]
+Type=simple
+Restart=always
+StartLimitInterval=10
+StartLimitBurst=5
+ExecStart=/usr/bin/compton -c -o 0.5
