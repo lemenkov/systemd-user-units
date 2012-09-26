@@ -1,0 +1,13 @@
+[Unit]
+Description=Setup environment
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+# System-wide setup
+ExecStartPre=/usr/bin/xmodmap /etc/X11/Xmodmap
+# User-specific setup
+ExecStart=/usr/bin/xmodmap %h/.Xmodmap
+
+[Install]
+WantedBy=environment.target
