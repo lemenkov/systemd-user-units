@@ -1,0 +1,8 @@
+[Unit]
+Description=GNOME Keyring Daemon
+Wants=environment.target
+Before=environment.target
+IgnoreOnIsolate=true
+
+[Service]
+ExecStart=/usr/bin/gnome-keyring-daemon --start -f

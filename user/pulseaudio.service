@@ -3,7 +3,7 @@ Description=PulseAudio Sound System
 
 [Service]
 #BusName=org.PulseAudio1
-#BusName=org.pulseaudio.Server
+BusName=org.pulseaudio.Server
 #Type=forking
 #ExecStart=/usr/bin/pulseaudio --start
 After=sound.target
