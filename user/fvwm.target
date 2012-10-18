@@ -1,5 +1,5 @@
 [Unit]
-Description=Openbox Desktop Environment
+Description=FVWM
 Wants=xorg.target
 Wants=fvwm.service
 AllowIsolate=true
