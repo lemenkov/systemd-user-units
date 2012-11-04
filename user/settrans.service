@@ -1,0 +1,12 @@
+[Unit]
+Description=Set up opacity
+After=fvwm.target
+Wants=fvwm.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/settrans -n "desktop" -o 30
+
+[Install]
+WantedBy=default.target

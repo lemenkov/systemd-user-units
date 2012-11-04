@@ -2,6 +2,7 @@
 Description=FVWM
 Wants=xorg.target
 Wants=fvwm.service
+After=fvwm.service
 AllowIsolate=true
 
 [Install]
