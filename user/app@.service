@@ -1,6 +1,5 @@
 [Unit]
 Description=Application "%i"
-After=xorg.target
 After=environment.target
 IgnoreOnIsolate=yes
 
