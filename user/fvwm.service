@@ -8,6 +8,7 @@ Description=FVWM
 After=environment.target
 
 [Service]
+EnvironmentFile=-/etc/locale.conf
 #ExecStart=/usr/bin/fvwm -f /home/petro/.fvwm/.fvwm2rc
 ExecStart=/usr/bin/fvwm
 #ExecReload=/usr/bin/fvwm --reload

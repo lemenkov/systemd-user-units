@@ -6,7 +6,8 @@ Description=Gajim
 #RootDirectory=/usr/share/gajim/src
 #ExecStart=/usr/bin/python -OO gajim.py
 #Type=forking
-ExecStart=/usr/bin/python -OO /usr/share/gajim/src/gajim.py
+EnvironmentFile=-/etc/locale.conf
+ExecStart=/usr/bin/python -OO /usr/share/gajim/src/gajim.py --verbose
 
 [Install]
 WantedBy=default.target
