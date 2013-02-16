@@ -9,11 +9,7 @@ After=environment.target
 
 [Service]
 EnvironmentFile=-/etc/locale.conf
-#ExecStart=/usr/bin/fvwm -f /home/petro/.fvwm/.fvwm2rc
 ExecStart=/usr/bin/fvwm
-#ExecReload=/usr/bin/fvwm --reload
-#ExecStop=/usr/bin/fvwm --exit
-
 KillMode=process
 Restart=always
 RestartSec=1
