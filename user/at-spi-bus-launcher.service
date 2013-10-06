@@ -1,0 +1,12 @@
+[Unit]
+Description=org.a11y.Bus
+
+[Service]
+Type=dbus
+EnvironmentFile=-/etc/locale.conf
+Environment=DISPLAY=:0
+BusName=org.a11y.Bus
+ExecStart=/usr/libexec/at-spi-bus-launcher
+
+[Install]
+WantedBy=default.target

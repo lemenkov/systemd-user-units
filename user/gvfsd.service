@@ -1,0 +1,12 @@
+[Unit]
+Description=org.gtk.vfs.Daemon
+
+[Service]
+Type=dbus
+EnvironmentFile=-/etc/locale.conf
+Environment=DISPLAY=:0
+BusName=org.gtk.vfs.Daemon
+ExecStart=/usr/libexec/gvfsd
+
+[Install]
+WantedBy=default.target

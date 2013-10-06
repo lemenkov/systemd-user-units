@@ -1,4 +1,8 @@
 [Unit]
+After=at-spi-bus-launcher.service
+Requires=at-spi-bus-launcher.service
+After=gvfsd.service
+Requires=gvfsd.service
 Description=Notification Daemon
 
 [Service]
