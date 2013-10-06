@@ -8,6 +8,7 @@ Description=FVWM
 
 [Service]
 EnvironmentFile=-/etc/locale.conf
+Environment=DISPLAY=:0
 ExecStart=/usr/bin/fvwm
 KillMode=process
 Restart=always
