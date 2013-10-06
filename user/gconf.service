@@ -1,0 +1,12 @@
+[Unit]
+Description=org.gnome.GConf
+
+[Service]
+Type=dbus
+EnvironmentFile=-/etc/locale.conf
+Environment=DISPLAY=:0
+BusName=org.gnome.GConf
+ExecStart=/usr/libexec/gconfd-2
+
+[Install]
+WantedBy=default.target
