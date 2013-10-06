@@ -2,7 +2,9 @@
 Description=Notification Daemon
 
 [Service]
+Type=dbus
 EnvironmentFile=-/etc/locale.conf
+BusName=org.freedesktop.Notifications
 ExecStart=/usr/libexec/notification-daemon
 
 [Install]

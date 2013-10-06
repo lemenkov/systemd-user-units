@@ -4,10 +4,9 @@ Requires=sound.target
 Description=PulseAudio Sound System
 
 [Service]
-#BusName=org.PulseAudio1
+Type=dbus
 BusName=org.pulseaudio.Server
-#Type=forking
-#ExecStart=/usr/bin/pulseaudio --start
+BusName=org.PulseAudio1
 ExecStart=/usr/bin/pulseaudio
 ExecStop=/usr/bin/pulseaudio --kill
 Restart=always
