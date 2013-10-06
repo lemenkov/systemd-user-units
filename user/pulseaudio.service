@@ -1,4 +1,6 @@
 [Unit]
+After=sound.target
+Requires=sound.target
 Description=PulseAudio Sound System
 
 [Service]
@@ -6,8 +8,6 @@ Description=PulseAudio Sound System
 BusName=org.pulseaudio.Server
 #Type=forking
 #ExecStart=/usr/bin/pulseaudio --start
-After=sound.target
-Requires=sound.target
 ExecStart=/usr/bin/pulseaudio
 ExecStop=/usr/bin/pulseaudio --kill
 
