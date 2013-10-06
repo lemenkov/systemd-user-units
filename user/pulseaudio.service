@@ -10,7 +10,6 @@ BusName=org.pulseaudio.Server
 #ExecStart=/usr/bin/pulseaudio --start
 ExecStart=/usr/bin/pulseaudio
 ExecStop=/usr/bin/pulseaudio --kill
-
 Restart=always
 
 [Install]
