@@ -1,3 +1,0 @@
-[Unit]
-Description=Set session environment variables
-IgnoreOnIsolate=true

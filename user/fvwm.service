@@ -5,7 +5,6 @@ Description=FVWM
 #Wants=nm-applet.service
 #Wants=stalonetray.service
 #Conflicts=gnome-session.service
-After=environment.target
 
 [Service]
 EnvironmentFile=-/etc/locale.conf

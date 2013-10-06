@@ -1,6 +1,5 @@
 [Unit]
 Description=Application "%i"
-After=environment.target
 IgnoreOnIsolate=yes
 
 [Service]
