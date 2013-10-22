@@ -4,5 +4,7 @@ Requires=dbus.socket
 After=syslog.target
 
 [Service]
+EnvironmentFile=-/etc/locale.conf
+Environment=DISPLAY=:0
 ExecStart=/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation
 ExecReload=/bin/dbus-send --print-reply --session --type=method_call --dest=org.freedesktop.DBus / org.freedesktop.DBus.ReloadConfig
