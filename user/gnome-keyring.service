@@ -1,4 +1,6 @@
 [Unit]
+After=gnome-keyring-system-prompter.service
+Requires=gnome-keyring-system-prompter.service
 Description=GNOME Keyring Daemon
 IgnoreOnIsolate=true
 
