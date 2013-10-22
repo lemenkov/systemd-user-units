@@ -5,6 +5,7 @@ IgnoreOnIsolate=yes
 [Service]
 EnvironmentFile=-/etc/locale.conf
 Environment=DISPLAY=:0
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=%t/dbus/user_bus_socket
 ExecStart=/usr/bin/env %i
 
 KillMode=process
