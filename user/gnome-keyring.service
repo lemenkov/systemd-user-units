@@ -10,4 +10,4 @@ EnvironmentFile=-/etc/locale.conf
 Environment=DISPLAY=:0
 BusName=org.gnome.keyring
 BusName=org.freedesktop.secrets
-ExecStart=/usr/bin/gnome-keyring-daemon --start -f
+ExecStart=/usr/bin/gnome-keyring-daemon --start -f --control-directory=%t/keyring
