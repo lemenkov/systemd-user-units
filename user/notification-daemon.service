@@ -9,6 +9,7 @@ Description=Notification Daemon
 Type=dbus
 EnvironmentFile=-/etc/locale.conf
 Environment=DISPLAY=:0
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=%t/dbus/user_bus_socket
 BusName=org.freedesktop.Notifications
 ExecStart=/usr/libexec/notification-daemon
 

@@ -5,6 +5,7 @@ Description=PulseAudio Sound System
 
 [Service]
 Type=dbus
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=%t/dbus/user_bus_socket
 BusName=org.pulseaudio.Server
 BusName=org.PulseAudio1
 ExecStart=/usr/bin/pulseaudio

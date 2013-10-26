@@ -8,6 +8,7 @@ IgnoreOnIsolate=true
 Type=dbus
 EnvironmentFile=-/etc/locale.conf
 Environment=DISPLAY=:0
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=%t/dbus/user_bus_socket
 BusName=org.gnome.keyring
 BusName=org.freedesktop.secrets
 ExecStart=/usr/bin/gnome-keyring-daemon --start -f --control-directory=%t/keyring
