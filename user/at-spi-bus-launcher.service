@@ -5,7 +5,6 @@ Description=org.a11y.Bus
 Type=dbus
 EnvironmentFile=-/etc/locale.conf
 Environment=DISPLAY=:0
-Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=%t/dbus/user_bus_socket
 BusName=org.a11y.Bus
 ExecStart=/usr/libexec/at-spi-bus-launcher
 

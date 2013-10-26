@@ -2,7 +2,6 @@
 Description=RXVT-Unicode Daemon
 
 [Service]
-Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=%t/dbus/user_bus_socket
 ExecStart=/usr/bin/urxvtd -q -o
 
 [Install]
